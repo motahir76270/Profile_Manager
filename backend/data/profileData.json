@@ -1,0 +1,437 @@
+[
+    {
+        "name": "Ayesha Patel",
+        "email": "ayesha.patel@example.com",
+        "education": [
+            {
+                "degree": "B.Tech in Information Technology",
+                "institution": "Indian Institute of Technology, Bombay",
+                "year": 2021
+            }
+        ],
+        "skills": [
+            "Java",
+            "React",
+            "Spring Boot",
+            "MySQL"
+        ],
+        "projects": [
+            {
+                "title": "E-commerce Platform",
+                "description": "A full-stack platform for online shopping.",
+                "links": [
+                    "https://github.com/ayeshapatel/ecommerce"
+                ],
+                "skills": [
+                    "React",
+                    "Node.js",
+                    "MongoDB"
+                ]
+            }
+        ],
+        "work": [
+            {
+                "company": "Infosys",
+                "role": "Software Engineer",
+                "duration": "July 2021 – Present"
+            }
+        ],
+        "links": {
+            "github": "https://github.com/ayeshapatel",
+            "linkedin": "https://linkedin.com/in/ayeshapatel",
+            "portfolio": "https://ayeshapatel.dev"
+        }
+    },
+    {
+        "name": "Liam Johnson",
+        "email": "liam.j@example.com",
+        "education": [
+            {
+                "degree": "B.Sc. in Software Engineering",
+                "institution": "University of Toronto",
+                "year": 2023
+            }
+        ],
+        "skills": [
+            "Python",
+            "Django",
+            "Docker",
+            "AWS"
+        ],
+        "projects": [
+            {
+                "title": "Real-time Chat App",
+                "description": "A scalable chat app using WebSocket.",
+                "links": [
+                    "https://github.com/liamj/chat-app"
+                ],
+                "skills": [
+                    "Django",
+                    "Redis",
+                    "WebSocket"
+                ]
+            }
+        ],
+        "work": [
+            {
+                "company": "Shopify",
+                "role": "Backend Developer Intern",
+                "duration": "May 2022 – August 2022"
+            }
+        ],
+        "links": {
+            "github": "https://github.com/liamj",
+            "linkedin": "https://linkedin.com/in/liamjohnson",
+            "portfolio": "https://liamjohnson.dev"
+        }
+    },
+    {
+        "name": "Sofia Nguyen",
+        "email": "sofia.n@example.com",
+        "education": [
+            {
+                "degree": "B.Sc. in Data Science",
+                "institution": "University of Melbourne",
+                "year": 2022
+            },
+            {
+                "degree": "M.Sc. in Machine Learning",
+                "institution": "University of Oxford",
+                "year": 2024
+            }
+        ],
+        "skills": [
+            "Python",
+            "Pandas",
+            "TensorFlow",
+            "SQL"
+        ],
+        "projects": [
+            {
+                "title": "Stock Price Predictor",
+                "description": "ML model to predict stock prices.",
+                "links": [
+                    "https://github.com/sofian/stock-predictor"
+                ],
+                "skills": [
+                    "Python",
+                    "Scikit-learn",
+                    "LSTM"
+                ]
+            }
+        ],
+        "work": [
+            {
+                "company": "Google AI",
+                "role": "Research Intern",
+                "duration": "Jan 2024 – Aug 2024"
+            }
+        ],
+        "links": {
+            "github": "https://github.com/sofian",
+            "linkedin": "https://linkedin.com/in/sofian",
+            "portfolio": "https://sofian.dev"
+        }
+    },
+    {
+        "name": "Carlos Ramirez",
+        "email": "c.ramirez@example.com",
+        "education": [
+            {
+                "degree": "B.Eng. in Computer Engineering",
+                "institution": "University of São Paulo",
+                "year": 2020
+            }
+        ],
+        "skills": [
+            "C++",
+            "Rust",
+            "Embedded Systems",
+            "Linux"
+        ],
+        "projects": [
+            {
+                "title": "Smart Home Controller",
+                "description": "IoT-based home automation controller.",
+                "links": [
+                    "https://github.com/carlosr/smart-home"
+                ],
+                "skills": [
+                    "C++",
+                    "Arduino",
+                    "MQTT"
+                ]
+            }
+        ],
+        "work": [
+            {
+                "company": "Bosch",
+                "role": "Firmware Engineer",
+                "duration": "Mar 2021 – Present"
+            }
+        ],
+        "links": {
+            "github": "https://github.com/carlosr",
+            "linkedin": "https://linkedin.com/in/carlosr",
+            "portfolio": "https://carlosramirez.dev"
+        }
+    },
+    {
+        "name": "Emma Lee",
+        "email": "emma.lee@example.com",
+        "education": [
+            {
+                "degree": "B.Sc. in Cybersecurity",
+                "institution": "Georgia Institute of Technology",
+                "year": 2023
+            }
+        ],
+        "skills": [
+            "Python",
+            "Network Security",
+            "Linux",
+            "Wireshark"
+        ],
+        "projects": [
+            {
+                "title": "Intrusion Detection System",
+                "description": "A system to detect and log unauthorized access.",
+                "links": [
+                    "https://github.com/emmal/ids"
+                ],
+                "skills": [
+                    "Python",
+                    "Snort",
+                    "Nmap"
+                ]
+            }
+        ],
+        "work": [
+            {
+                "company": "CrowdStrike",
+                "role": "Security Analyst Intern",
+                "duration": "May 2023 – Aug 2023"
+            }
+        ],
+        "links": {
+            "github": "https://github.com/emmal",
+            "linkedin": "https://linkedin.com/in/emmalee",
+            "portfolio": "https://emmalee.dev"
+        }
+    },
+    {
+        "name": "Tariq Aziz",
+        "email": "tariq.aziz@example.com",
+        "education": [
+            {
+                "degree": "B.Sc. in Computer Science",
+                "institution": "Lahore University of Management Sciences",
+                "year": 2021
+            }
+        ],
+        "skills": [
+            "Flutter",
+            "Dart",
+            "Firebase",
+            "UI/UX"
+        ],
+        "projects": [
+            {
+                "title": "Food Delivery App",
+                "description": "Cross-platform app for food ordering.",
+                "links": [
+                    "https://github.com/tariqaziz/food-app"
+                ],
+                "skills": [
+                    "Flutter",
+                    "Firebase",
+                    "Google Maps API"
+                ]
+            }
+        ],
+        "work": [
+            {
+                "company": "Bykea",
+                "role": "Mobile Developer",
+                "duration": "Jan 2022 – Present"
+            }
+        ],
+        "links": {
+            "github": "https://github.com/tariqaziz",
+            "linkedin": "https://linkedin.com/in/tariqaziz",
+            "portfolio": "https://tariqaziz.dev"
+        }
+    },
+    {
+        "name": "Nina Müller",
+        "email": "nina.muller@example.com",
+        "education": [
+            {
+                "degree": "M.Sc. in Data Science",
+                "institution": "Technical University of Munich",
+                "year": 2024
+            }
+        ],
+        "skills": [
+            "R",
+            "Python",
+            "Data Visualization",
+            "Power BI"
+        ],
+        "projects": [
+            {
+                "title": "COVID-19 Dashboard",
+                "description": "Interactive dashboard for global COVID-19 stats.",
+                "links": [
+                    "https://github.com/ninam/covid-dashboard"
+                ],
+                "skills": [
+                    "R Shiny",
+                    "Plotly",
+                    "Pandas"
+                ]
+            }
+        ],
+        "work": [
+            {
+                "company": "BMW Group",
+                "role": "Data Analyst Intern",
+                "duration": "March 2023 – August 2023"
+            }
+        ],
+        "links": {
+            "github": "https://github.com/ninam",
+            "linkedin": "https://linkedin.com/in/ninamuller",
+            "portfolio": "https://ninam.dev"
+        }
+    },
+    {
+        "name": "Jamal White",
+        "email": "jamal.white@example.com",
+        "education": [
+            {
+                "degree": "B.Sc. in Information Systems",
+                "institution": "University of Florida",
+                "year": 2022
+            }
+        ],
+        "skills": [
+            "SQL",
+            "JavaScript",
+            "Power BI",
+            "Excel"
+        ],
+        "projects": [
+            {
+                "title": "Sales Performance Tracker",
+                "description": "Tool to track and visualize sales KPIs.",
+                "links": [
+                    "https://github.com/jamalwhite/sales-tracker"
+                ],
+                "skills": [
+                    "Excel",
+                    "Power BI",
+                    "SQL Server"
+                ]
+            }
+        ],
+        "work": [
+            {
+                "company": "Deloitte",
+                "role": "Business Analyst",
+                "duration": "June 2022 – Present"
+            }
+        ],
+        "links": {
+            "github": "https://github.com/jamalwhite",
+            "linkedin": "https://linkedin.com/in/jamalwhite",
+            "portfolio": "https://jamalwhite.dev"
+        }
+    },
+    {
+        "name": "Maya Chen",
+        "email": "maya.chen@example.com",
+        "education": [
+            {
+                "degree": "B.Sc. in Human-Computer Interaction",
+                "institution": "Carnegie Mellon University",
+                "year": 2023
+            }
+        ],
+        "skills": [
+            "Figma",
+            "Adobe XD",
+            "JavaScript",
+            "Accessibility"
+        ],
+        "projects": [
+            {
+                "title": "UX Redesign for Non-Profit",
+                "description": "Improved usability and accessibility for an NGO website.",
+                "links": [
+                    "https://github.com/mayachen/ux-redesign"
+                ],
+                "skills": [
+                    "Figma",
+                    "Usability Testing",
+                    "HTML/CSS"
+                ]
+            }
+        ],
+        "work": [
+            {
+                "company": "IBM",
+                "role": "UX Designer Intern",
+                "duration": "May 2023 – Aug 2023"
+            }
+        ],
+        "links": {
+            "github": "https://github.com/mayachen",
+            "linkedin": "https://linkedin.com/in/mayachen",
+            "portfolio": "https://mayachen.dev"
+        }
+    },
+    {
+        "name": "Rohan Desai",
+        "email": "rohan.desai@example.com",
+        "education": [
+            {
+                "degree": "B.Tech in Computer Engineering",
+                "institution": "Delhi Technological University",
+                "year": 2021
+            }
+        ],
+        "skills": [
+            "Go",
+            "Kubernetes",
+            "Docker",
+            "Microservices"
+        ],
+        "projects": [
+            {
+                "title": "Container Management Tool",
+                "description": "CLI tool for managing Docker containers.",
+                "links": [
+                    "https://github.com/rohdesai/container-tool"
+                ],
+                "skills": [
+                    "Go",
+                    "Docker",
+                    "CLI"
+                ]
+            }
+        ],
+        "work": [
+            {
+                "company": "Red Hat",
+                "role": "DevOps Engineer",
+                "duration": "Aug 2021 – Present"
+            }
+        ],
+        "links": {
+            "github": "https://github.com/rohdesai",
+            "linkedin": "https://linkedin.com/in/rohdesai",
+            "portfolio": "https://rohdesai.dev"
+        }
+    }
+]
