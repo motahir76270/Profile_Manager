@@ -27,8 +27,8 @@ const AddProfile = () => {
 
   const edu = useFieldArray({ control, name: 'education' });
   const skl = useFieldArray({ control, name: 'skills' });
-  const prj = useFieldArray({ control, name: 'projects' });
   const workArray = useFieldArray({ control, name: 'work' });
+  const prj = useFieldArray({ control, name: 'projects' });
 
   // Create field arrays for each project's links and skills
   const projectLinksArrays = prj.fields.map((_, index) => 
@@ -54,9 +54,7 @@ try {
 }
 };
 
-  useEffect( () => {
-    onSubmit();
-  },[onSubmit]);
+
    
 
   return ( <>
@@ -82,7 +80,7 @@ try {
           <div>
             <h2 className="text-lg font-semibold">Education</h2>
             {edu.fields.map((field, idx) => (
-              <div key={field.id} className="flex space-x-2 items-end mt-2">
+              <div key={field.id} className="flex flex-col md:flex-row space-x-2 items-start mt-2">
                 <input placeholder="Degree" {...register(`education.${idx}.degree`)} className="border p-2 rounded flex-1" />
                 <input placeholder="Institution" {...register(`education.${idx}.institution`)} className="border p-2 rounded flex-1" />
                 <input type="number" placeholder="Year" {...register(`education.${idx}.year`)} className="border p-2 rounded w-24" />
@@ -146,16 +144,16 @@ try {
                         <button type="button" onClick={() => pSkills.remove(sIdx)} className="text-red-500">Remove</button>
                       </div>
                     ))}
-                    <button type="button" onClick={() => pSkills.append('')} className="mt-1 px-3 py-1 bg-blue-400 text-white rounded">Add Skill</button>
+                    <button type="button" onClick={ () => pSkills.append('')} className="mt-1 px-3 py-1 bg-blue-400 text-white rounded">Add Skill</button>
                   </div>
                 </div>
               );
             })}
-            <button
+            {/* <button
               type="button"
-              onClick={() => prj.append({ title: '', description: '', links: [''], skills: [''] })}
+              onClick={ () => prj.append({ title: '', description: '', links: [''], skills: [''] } ) }
               className="mt-2 px-4 py-2 bg-blue-500 text-white rounded"
-            >Add Project</button>
+            >Add Project</button> */}
           </div>
         }
 

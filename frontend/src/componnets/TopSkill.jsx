@@ -21,7 +21,7 @@ const TopSkill = () => {
    
 
   return (
-    <div className='flex flex-col w-full py-6 min-h-50 bg-gradient-to-br from-sky-900 via-slate-600 to-sky-800'>
+    <div className='flex flex-col w-full py-6 px-1  min-h-50 bg-gradient-to-br from-sky-900 via-slate-600 to-sky-800'>
         <h1 className='text-2xl text-gray-400 mx-auto font-semibold'>Top Skills</h1>
      <div key={skills} className='flex flex-wrap justify-around gap-2 md:gap-5 mx-1 md:mx-[2rem] mt-4'> 
          {Object.entries(skills).map(([skill, level]) => (

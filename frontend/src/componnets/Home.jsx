@@ -26,7 +26,7 @@ function Home() {
        
    <div className='flex flex-col md:flex-row md:gap-[2rem]'>
       <h1 className='md:text-3xl text-gray-300  '>All Profiles</h1>
-      <Link className='rounded-sm bg-green-500 w-35 h-8 py-1 px-2 md:w-40 md:py-2 md:px-3 ' to="/addProfile">Add New Profile</Link>
+      <Link className='rounded-sm bg-green-500 w-35 h-8 py-1 px-2 md:w-40 md:py-2 md:h-10 md:px-3  ' to="/addProfile">Add New Profile</Link>
    </div>
       <input type="text" placeholder='Search' onChange={(e) => setProfileSearch(e.target.value)} className='px-5 w-40 h-8 md:w-60 rounded-sm bg-white/30 shadow-2xl shadow-gray-900 ' />
     </div>

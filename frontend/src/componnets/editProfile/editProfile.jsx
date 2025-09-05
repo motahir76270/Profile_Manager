@@ -82,7 +82,7 @@ try {
           <div>
             <h2 className="text-lg font-semibold">Education</h2>
             {edu.fields.map((field, idx) => (
-              <div key={field.id} className="flex space-x-2 items-end mt-2">
+              <div key={field.id} className="flex flex-col md:flex-row space-x-2 items-start mt-2">
                 <input placeholder="Degree" {...register(`education.${idx}.degree`)} className="border p-2 rounded flex-1" />
                 <input placeholder="Institution" {...register(`education.${idx}.institution`)} className="border p-2 rounded flex-1" />
                 <input type="number" placeholder="Year" {...register(`education.${idx}.year`)} className="border p-2 rounded w-24" />
@@ -151,11 +151,11 @@ try {
                 </div>
               );
             })}
-            <button
+            {/* <button
               type="button"
               onClick={() => prj.append({ title: '', description: '', links: [''], skills: [''] })}
               className="mt-2 px-4 py-2 bg-blue-500 text-white rounded"
-            >Add Project</button>
+            >Add Project</button> */}
           </div>
         }
 
