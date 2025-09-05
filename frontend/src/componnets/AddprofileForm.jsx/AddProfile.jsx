@@ -3,6 +3,8 @@ import { useForm, useFieldArray } from 'react-hook-form';
 import Navbar from '../navbar';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import {  toast } from 'react-toastify';
+
 
 const AddProfile = () => {
   const navigate = useNavigate();
@@ -44,8 +46,10 @@ const payload = JSON.parse(JSON.stringify(res));
 try {
   const {data} =  axios.post(`${url}/api/profile`, payload, { headers: { 'Content-Type': 'application/json' } })
   console.log(data);
+  toast.success("profile Succesfully Added")
   navigate('/')
 } catch (error) {
+  toast.warning("error in Adding profile")
   console.log(error)
 }
 };

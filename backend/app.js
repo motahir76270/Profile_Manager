@@ -29,8 +29,8 @@ async function main() {
 main();
 
 // Health check
-app.get("/api/health", (req, res) => res.json({ status: "ok" }));
-
+app.get("/", async(req, res) => res.json({ status: "ok" }));
+app.get("/health" , (req,res) => res.json({status: "ok"}) );
 // Create profile
 app.post("/api/profile", async (req, res) => {
     try {

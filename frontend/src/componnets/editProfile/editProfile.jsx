@@ -4,6 +4,7 @@ import Navbar from '../navbar';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { UserContext } from '../../context/context';
+import {  toast } from 'react-toastify';
 
 
 const EditProfile = () => {
@@ -46,10 +47,10 @@ const onSubmit = async(res) => {
 const payload = JSON.parse(JSON.stringify(res));
 try {
   const {data} =  axios.put(`${url}/api/profile`, payload, { headers: { 'Content-Type': 'application/json' } })
-  console.log(data);
+  toast.success("profile Successfully Update")
   navigate('/')
 } catch (error) {
-  console.log(error)
+  toast.warning("something went wrong" , error)
 }
 };
 
