@@ -43,7 +43,7 @@ const EditProfile = () => {
 
   
 const onSubmit = async(res) => {
- const url = import.meta.env.VITE_Backend_Url;
+const url = import.meta.env.VITE_Backend_Url;
 const payload = JSON.parse(JSON.stringify(res));
 try {
   const {data} =  axios.put(`${url}/api/profile`, payload, { headers: { 'Content-Type': 'application/json' } })
@@ -54,9 +54,6 @@ try {
 }
 };
 
-  useEffect( () => {
-    onSubmit();
-  },[onSubmit]);
    
 
   return ( <>

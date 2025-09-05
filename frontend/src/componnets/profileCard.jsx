@@ -62,9 +62,8 @@ const ProfileCard = ({profileSearch}) => {
                 </div>
                 <div className="flex flex-col md:flex-row lg:flex-row  gap-4">
                   <Link
-                    to={`/EditProfile/${item._id}`}
+                    to={`EditProfile/${item._id}`}
                     onClick={()=> setSelectedProfile(item)}
-                    target="_blank"
                     rel="noopener noreferrer"
                     className="w-full mg:w-1/2 bg-gray-800 hover:bg-purple-800 text-gray-400 lg:px-4 lg:py-2 px-2 py-1 rounded-xl lg:text-sm text-sm font-semibold text-center"
                     >
