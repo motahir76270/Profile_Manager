@@ -58,7 +58,7 @@ const [activeSection, setActiveSection] = useState("");
           ))}
         </div>
         <button className="md:hidden text-gray-700" onClick={() => setOpen(!open)}>
-          {open ? <IoMdCloseCircleOutline  /> : <HiMenuAlt3  />}
+          {open ? <IoMdCloseCircleOutline className="text-white text-2xl"  /> : <HiMenuAlt3 className="text-white text-3xl"  />}
         </button>
       </div>
       {open && (

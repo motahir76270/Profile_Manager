@@ -10,22 +10,57 @@ import {  toast } from 'react-toastify';
 const EditProfile = () => {
   const { selectedProfile} = useContext(UserContext);
   const navigate = useNavigate();
-
+  
   const [step, setStep] = useState(0);
-  const [formData , setFormData] = useState({})
-  console.log(formData);
- 
-  const { register, control, handleSubmit } = useForm({
-    defaultValues: {
-      name: selectedProfile.name,
-      email: selectedProfile.email,
-      education: [{ degree: selectedProfile.education.degree, institution: selectedProfile.education.institution, year: selectedProfile.education.year }],
-      skills: [selectedProfile.skills],
-      projects: [{ title: selectedProfile.projects.title, description: selectedProfile.projects.description, links: [selectedProfile.projects.links], skills: [selectedProfile.projects.skills] }],
-      work: [{ company: selectedProfile.work.company, role: selectedProfile.work.role , duration: selectedProfile.work.duration }],
-      links: { github: selectedProfile.links.github, linkedin: selectedProfile.links.linkedin, portfolio: selectedProfile.portfolio  },
-    },
-  });
+
+const { register, control, handleSubmit } = useForm({
+  defaultValues: {
+    name: selectedProfile?.name || "",
+    email: selectedProfile?.email || "",
+    
+    education: selectedProfile?.education?.length > 0 ? [{
+      degree: selectedProfile.education[0]?.degree || "",
+      institution: selectedProfile.education[0]?.institution || "",
+      year: selectedProfile.education[0]?.year || ""
+    }] : [{
+      degree: "",
+      institution: "",
+      year: ""
+    }],
+    
+    // ✅ Remove nested array
+    skills: selectedProfile?.skills || [],
+
+    projects: selectedProfile?.projects?.length > 0 ? [{
+      title: selectedProfile.projects[0]?.title || "",
+      description: selectedProfile.projects[0]?.description || "",
+      links: selectedProfile.projects[0]?.links || [],
+      skills: selectedProfile.projects[0]?.skills || []
+    }] : [{
+      title: "",
+      description: "",
+      links: [],
+      skills: []
+    }],
+
+    work: selectedProfile?.work?.length > 0 ? [{
+      company: selectedProfile.work[0]?.company || "",
+      role: selectedProfile.work[0]?.role || "",
+      duration: selectedProfile.work[0]?.duration || ""
+    }] : [{
+      company: "",
+      role: "",
+      duration: ""
+    }],
+
+    links: {
+      github: selectedProfile?.links?.github || "",
+      linkedin: selectedProfile?.links?.linkedin || "",
+      portfolio: selectedProfile?.links?.portfolio || ""
+    }
+  }
+});
+
 
   const edu = useFieldArray({ control, name: 'education' });
   const skl = useFieldArray({ control, name: 'skills' });
@@ -43,11 +78,13 @@ const EditProfile = () => {
 
   
 const onSubmit = async(res) => {
-const url = import.meta.env.VITE_Backend_Url;
-const payload = JSON.parse(JSON.stringify(res));
-try {
-  const {data} =  axios.put(`${url}/api/profile/${selectedProfile._id}`, payload, { headers: { 'Content-Type': 'application/json' } })
+  try {
+  const payload = { ...res};
+  const url = import.meta.env.VITE_Backend_Url;
+  var id = selectedProfile._id ;
+  const { data } =  await axios.put(`${url}/api/profile/${id}`, payload, { headers: { 'Content-Type': 'application/json' } })
   toast.success("profile Successfully Update")
+  console.log(data?.message);
   navigate('/')
 } catch (error) {
   toast.warning("something went wrong" , error)
